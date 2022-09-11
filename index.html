@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+  <title>FAQ Accordion</title>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="header_container">
+      <header class="header">
+        <div class="header-left">
+          <a href="#" class="logo">
+            <img src="./images/logo.svg" alt="snap" class="logo-snap">
+          </a>
+        </div>
+        <div class="header-right">
+          <nav class="nav-wrapper" role="navigation" aria-label="main menu">
+            <ul class="site-list">
+              <li class="site-list_item">
+                <a href="#" id="product-arrow" class="list-item-arrow">product</a>
+                <ul class="sub-menu-product">
+                  <li class="sub-menu-item">
+                    <a href="#" class="drop-down">software</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="#" class="drop-down">marketing</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="#" class="drop-down">operations</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="#" class="drop-down">security</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="site-list_item">
+                <a href="#" id="features-arrow" class="list-item-arrow">features</a>
+                <ul class="sub-menu-features">
+                  <li class="sub-menu-item">
+                    <a href="#" class="drop-down">communication</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="#" class="drop-down">security</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="#" class="drop-down">productivity</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="#" class="drop-down">administration</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="site-list_item">
+                <a href="#" class="list-item">pricing</a>
+              </li>
+              <li class="site-list_item">
+                <a href="#" class="list-item">resources</a>
+              </li>
+              <li class="site-list_item-contact">
+                <a href="#" id="contact-btn" class="list-item">contact</a>
+              </li>
+              <li class="site-list_item-login">
+                <a href="#" id="login-btn" class="list-item">login</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="btn-mobile" type="button" aria-expanded="false">
+            <svg class="icon-hamburger" width="32" height="18" xmlns="http://www.w3.org/2000/svg"><g fill="#151515" fill-rule="evenodd"><path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/></g></svg>
+            <svg class="icon-close" width="26" height="26" xmlns="http://www.w3.org/2000/svg"><g fill="#151515" fill-rule="evenodd"><path d="m2.393.98 22.628 22.628-1.414 1.414L.979 2.395z"/><path d="M.98 23.607 23.609.979l1.414 1.414L2.395 25.021z"/></g></svg>
+          </button>
+        </div>
+        <div class="mobile-menu-wrapper">
+          <nav class="mobile-menu">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-list_item">
+                <a href="#" id="mobile-product" class="mobile-title">product</a>
+                <div class="mobile-sub-menu-wrapper">
+                 <ul id="product-sub" class="mobile-sub-menu">
+                   <li class="mobile-sub-menu-item">
+                     <a href="#" class="mobile-sub-menu-title">software</a>
+                   </li>
+                   <li class="mobile-sub-menu-item">
+                     <a href="#" class="mobile-sub-menu-title">marketing</a>
+                   </li>
+                   <li class="mobile-sub-menu-item">
+                     <a href="#" class="mobile-sub-menu-title">operations</a>
+                   </li>
+                   <li class="mobile-sub-menu-item">
+                     <a href="#" class="mobile-sub-menu-title">security</a>
+                   </li>
+                 </ul>
+                </div>
+              </li>
+              <li class="mobile-menu-list_item">
+                <a href="#" id="mobile-features" class="mobile-title">Features</a>
+                <div class="mobile-sub-menu-wrapper">
+                  <ul id="features-sub" class="mobile-sub-menu">
+                   <li class="mobile-sub-menu-item">
+                     <a href="#" class="mobile-sub-menu-title">communication</a>
+                   </li>
+                   <li class="mobile-sub-menu-item">
+                     <a href="#" class="mobile-sub-menu-title">security</a>
+                   </li>
+                   <li class="mobile-sub-menu-item">
+                     <a href="#" class="mobile-sub-menu-title">productivity</a>
+                   </li>
+                   <li class="mobile-sub-menu-item">
+                     <a href="#" class="mobile-sub-menu-title">administration</a>
+                   </li>
+                 </ul>
+                </div>
+              </li>
+              <li class="mobile-menu-list_item">
+                <a href="#" class="mobile-title">pricing</a>
+              </li>
+              <li class="mobile-menu-list_item">
+                <a href="#" class="mobile-title">resources</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-contact-btn">
+            <a href="#" class="mobile-contact">Contact</a>
+          </div>
+          <div class="mobile-login-btn">
+            <a href="#" class="mobile-login">Login</a>
+          </div>
+        </div>
+      </header>
+    </div>
+    <main class="main">
+      <div class="card-component">
+          <div class="img-container">
+            <img src="./images/illustration-woman-online-mobile.svg" alt="">
+          </div>
+          <div class="faq-container">
+              <h2 class="faq-title">Questions? We have answers</h2>
+              <div class="faq-component">
+                <details class="faq">
+                  <summary class="question">
+                    <div class="flex-item">
+                      <p class="question-component">How many team members can I invite?</p>
+                      <div class="question-arrow">
+                        <svg class="arrow-svg" width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#034956" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                      </div>
+                    </div>
+                  </summary>
+                  <p class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on 
+                    team members for the Premium plan.</p>
+                </details>
+                <details class="faq">
+                  <summary class="question">
+                    <div class="flex-item">
+                      <p class="question-component">What is the maximum file upload size?</p>
+                      <div class="question-arrow">
+                        <svg class="arrow-svg" width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#034956" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                      </div>
+                    </div>
+                  </summary>
+                  <p class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                </details>
+                <details class="faq">
+                  <summary class="question">
+                    <div class="flex-item">
+                     <p class="question-component">How do I reset my password?</p>
+                     <div class="question-arrow">
+                       <svg class="arrow-svg" width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#034956" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                     </div>
+                    </div>
+                  </summary>
+                  <p class="answer">Click “Forgot password” from the login page or “Change password” from your profile page.
+                    A reset link will be emailed to you.</p>
+                </details>
+                <details class="faq">
+                  <summary class="question">
+                    <div class="flex-item">
+                     <p class="question-component">Can I cancel my subscription?</p>
+                     <div class="question-arrow">
+                       <svg class="arrow-svg" width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#034956" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                     </div>
+                    </div>
+                  </summary>
+                  <p class="answer">Yes! Send us a message and we’ll process your request no questions asked.</p>
+                </details>
+                <details class="faq">
+                  <summary class="question">
+                    <div class="flex-item">
+                     <p class="question-component">Do you provide additional support?</p>
+                     <div class="question-arrow">
+                       <svg class="arrow-svg" width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#034956" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                     </div>
+                    </div>
+                  </summary>
+                  <p class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+                </details>
+              </div>
+          </div>
+      </div>
+    </main>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
